@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Densidade na Prática Farmacêutica</title>
+<style>
+:root{--bg:#f6f9fc;--card:#fff;--tx:#0f172a;--mu:#475569;--pr:#0a7bbf;--ok:#0f8a5f;--er:#c2410c;--bd:#dbe4ee;--hl:#e6f3fb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--card:#131c2e;--tx:#e8eef7;--mu:#9fb0c6;--pr:#4db3ee;--ok:#34d399;--er:#fb923c;--bd:#26344d;--hl:#12263b;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+.w{max-width:820px;margin:0 auto;padding:16px}
+h1{font-size:1.4rem;margin:8px 0 2px}p.s{color:var(--mu);margin:0 0 12px}
+nav{display:flex;gap:6px;margin:12px 0;position:sticky;top:0;background:var(--bg);padding:6px 0;z-index:5}
+nav button{flex:1;padding:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;font:inherit;font-weight:600;cursor:pointer}
+nav button.on{background:var(--pr);color:#fff;border-color:var(--pr)}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:12px}
+.c h2,.c h3{margin:0 0 8px;font-size:1.05rem}
+.f{background:var(--hl);border-left:4px solid var(--pr);padding:8px 12px;border-radius:8px;margin:8px 0;font-weight:600}
+.sc{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:420px}td,th{border:1px solid var(--bd);padding:6px 10px;text-align:left}th{background:var(--hl)}
+input,select{font:inherit;padding:9px;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--tx);max-width:100%}
+.r{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0}
+.b{padding:10px 14px;border:0;border-radius:10px;background:var(--pr);color:#fff;font:inherit;font-weight:600;cursor:pointer}
+.b.g{background:transparent;color:var(--pr);border:1px solid var(--pr)}
+.o{display:block;width:100%;text-align:left;margin:6px 0;padding:10px 12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;font:inherit;cursor:pointer}
+.o.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,transparent)}.o.no{border-color:var(--er);background:color-mix(in srgb,var(--er) 18%,transparent)}
+.res{font-size:1.3rem;font-weight:700;color:var(--pr)}.tag{font-size:.8rem;color:var(--mu);text-transform:uppercase;letter-spacing:.04em}
+ol.st{padding-left:20px;margin:6px 0}.bar{height:8px;background:var(--bd);border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--pr)}
+.cube{width:110px;height:110px;border-radius:12px;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:600;text-shadow:0 1px 2px #0006}.cube b{font-size:1.2rem}
+.fm{font-size:1.5rem;font-weight:700;text-align:center;min-height:2.4em;color:var(--pr)}.fm span{display:inline-block;animation:pop .5s both}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.7)}to{opacity:1;transform:none}}
+@keyframes sl{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:none}}.st2{animation:sl .5s both}
+.tri{display:block;margin:8px auto;max-width:250px}.tri g{cursor:pointer}.tri .n{fill:var(--card);stroke:var(--pr);stroke-width:3;transition:.3s}.tri g.on .n{fill:var(--pr)}.tri text{font:700 26px system-ui;fill:var(--tx);pointer-events:none}.tri g.on text{fill:#fff}
+.tank{position:relative;height:160px;border:2px solid var(--bd);border-radius:10px;overflow:hidden;background:linear-gradient(var(--card) 25%,#4db3ee66 25%);max-width:360px;margin:8px auto}
+.ob{position:absolute;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;color:#fff;font-weight:700;top:0;transition:top 1.6s ease-in}.o1{left:22%;background:#d9a400}.o2{left:60%;background:#7a4bd1}.go .o1{top:22px}.go .o2{top:104px}
+.ch{width:auto!important;margin:0!important;display:inline-block;min-width:46px;text-align:center}.ar{font-size:.7rem;color:var(--mu);text-align:center;line-height:1.2}
+.lad{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0}.lo{min-height:3em}
+nav button{padding:10px 4px;font-size:.85rem}
+#gr{display:grid;grid-template-columns:repeat(10,1fr);gap:2px;max-width:240px;margin:8px auto}#gr i{aspect-ratio:1;border-radius:2px;background:var(--pr);opacity:0;animation:pop .35s forwards}
+</style></head><body><div class="w">
+<h1>🧪 Densidade na Prática Farmacêutica</h1>
+<p class="s">Conversões, questões comentadas e quiz.</p>
+<nav><button data-t="z" class="on">Do zero</button><button data-t="l">Aprender</button><button data-t="a">Conversões</button><button data-t="b">Questões</button><button data-t="c">Quiz</button></nav>
+<div id="z">
+<div class="c"><h2>🌱 Começando do zero</h2><p>Sem pressa. Só duas ideias:</p>
+<div class="f">Massa = quanto algo <b>pesa</b> (g, kg)</div><div class="f">Volume = quanto <b>espaço</b> algo ocupa (mL, L)</div>
+<p>Uma bola de algodão e uma de chumbo do mesmo tamanho ocupam o mesmo espaço (mesmo volume), mas o chumbo pesa muito mais (maior massa). A <b>densidade</b> mede exatamente isso: <b>quanto pesa cada pedacinho de espaço</b>.</p></div>
+<div class="c"><h2>🔤 Lendo as unidades</h2><p>Os prefixos são só nomes de tamanhos:</p><div class="sc"><table><tr><th>Prefixo</th><th>Significa</th><th>Exemplo</th></tr>
+<tr><td>quilo (k)</td><td>mil vezes</td><td>1 kg = 1000 g</td></tr><tr><td>mili (m)</td><td>1 milésimo</td><td>1 g = 1000 mg · 1 L = 1000 mL</td></tr><tr><td>micro (µ)</td><td>1 milionésimo</td><td>1 mg = 1000 µg · 1 mL = 1000 µL</td></tr><tr><td>deci (d)</td><td>1 décimo</td><td>1 L = 10 dL</td></tr><tr><td>tonelada (t)</td><td>mil quilos</td><td>1 t = 1000 kg</td></tr></table></div></div>
+<div class="c"><h2>🧊 Por que 1 cm³ = 1 mL?</h2><p>Imagine uma caixa de 10 cm × 10 cm × 10 cm. Ela guarda exatamente <b>1 litro</b>. Vamos enchê-la com cubinhos de 1 cm de lado (cada um é 1 cm³). Cada camada tem 10 × 10 = 100 cubinhos.</p>
+<div id="gr"></div><div class="fm" id="gc">0 cubinhos</div>
+<div class="r" style="justify-content:center"><button class="b" id="lay">➕ Empilhar camada</button><button class="b g" id="lr">↺ Limpar</button></div>
+<div class="f" id="gm" hidden>10 camadas × 100 = 1000 cubinhos. Como 1 L = 1000 mL, cada cubinho vale 1 mL. Logo, <b>1 cm³ = 1 mL</b> ✔</div></div>
+<div class="c"><h2>⚖️ Densidade em uma frase</h2><p>Densidade é <b>quanto 1 mL pesa</b>. Se d = 1,32 g/mL, cada mL pesa 1,32 g. Para 250 mL, é só repetir 250 vezes: 250 × 1,32 = 330 g. Multiplicar é apenas repetir.</p>
+<div class="f">Quer a massa? m = d × V</div><div class="f">Quer o volume? V = m ÷ d</div><div class="f">Quer a densidade? d = m ÷ V</div>
+<p>A água é a referência: 1 mL pesa 1 g, então d = 1 g/mL. Por isso g/mL, g/cm³ e kg/L têm o mesmo número.</p></div>
+<div class="c"><h2>✏️ Treino guiado</h2><p>Quatro perguntas curtinhas. Pode usar vírgula.</p><div id="tz"></div><p class="s">Foi bem? Vá para <b>Aprender</b> (animações), depois <b>Questões</b> e <b>Quiz</b>. 🚀</p></div>
+</div>
+<div id="l" hidden>
+<div class="c"><h2>1. O que é densidade?</h2><p>É <b>quanta massa cabe em cada volume</b>. Dois cubos de 1 mL têm o mesmo volume, mas não a mesma massa. Aperte o botão e pese.</p>
+<div class="r" style="justify-content:center;gap:24px"><div class="cube" style="background:#2b8fd1">Água<b id="w1">0,00 g</b></div><div class="cube" style="background:#c98a00">Mel<b id="w2">0,00 g</b></div></div>
+<div class="r" style="justify-content:center"><button class="b" id="pes">⚖️ Pesar 1 mL de cada</button></div><div class="fm" id="f0"></div></div>
+<div class="c"><h2>2. O triângulo mágico</h2><p>Toque na letra que você quer descobrir. A fórmula se monta sozinha.</p>
+<svg class="tri" viewBox="0 0 240 200"><polygon points="120,8 232,192 8,192" fill="none" stroke="currentColor" stroke-opacity=".25" stroke-width="2"/><g data-k="m"><circle class="n" cx="120" cy="62" r="30"/><text x="120" y="71" text-anchor="middle">m</text></g><g data-k="d"><circle class="n" cx="68" cy="150" r="30"/><text x="68" y="159" text-anchor="middle">d</text></g><g data-k="V"><circle class="n" cx="172" cy="150" r="30"/><text x="172" y="159" text-anchor="middle">V</text></g></svg>
+<div class="fm" id="f1">👆 escolha uma letra</div><p class="s" id="e1" style="text-align:center"></p></div>
+<div class="c"><h2>3. Densidade relativa: boia ou afunda?</h2><p>A água vale 1. Compare: <b>d &lt; 1 boia</b>, <b>d &gt; 1 afunda</b>.</p>
+<div class="tank" id="tk"><div class="ob o1">0,85</div><div class="ob o2">1,26</div></div>
+<p class="s" style="text-align:center">🟡 óleo mineral (0,85) · 🟣 glicerina (1,26)</p><div class="r" style="justify-content:center"><button class="b" id="sol">💧 Soltar na água</button></div></div>
+<div class="c"><h2>4. A escada das conversões</h2><p>Toque em uma unidade e depois em outra. Para a <b>direita</b> você multiplica; para a <b>esquerda</b> divide.</p>
+<b>Massa</b><div class="lad" id="Lm"></div><div class="lo" id="Om"></div>
+<b>Volume</b><div class="lad" id="Lv"></div><div class="lo" id="Ov"></div>
+<div class="f">1 g/mL = 1 g/cm³ = 1 kg/L = 1000 kg/m³ → só o kg/m³ muda: ÷ 1000</div></div>
+<div class="c"><h2>5. Método de 4 passos</h2><p>Exemplo: 80 g de óleo, d = 0,85 g/mL. Volume em dL?</p><div id="ms"></div><div class="r"><button class="b" id="nxt">Próximo passo ▶</button></div></div>
+<div class="c"><h2>6. Cuidado com estes erros</h2><ul><li>1 m³ = <b>1 000 000</b> cm³ (e não 1000).</li><li>Pediu densidade <b>compactada</b>? Não use a aparente.</li><li>Picnometria: subtraia o picnômetro vazio.</li><li>Solução %: massa da solução × porcentagem.</li></ul><p class="s">Pronto? Vá para <b>Questões</b> e <b>Quiz</b>. 🚀</p></div>
+</div>
+<div id="a" hidden>
+<div class="c"><h2>Fórmulas-chave</h2>
+<div class="f">d = m ÷ V</div><div class="f">m = d × V</div><div class="f">V = m ÷ d</div>
+<p>Densidade relativa = d da substância ÷ d da água (sem unidade). Água a 4 °C: 1,000 g/cm³.</p>
+<p>Para soluções % (m/m): massa de soluto = massa da solução × %.</p></div>
+<div class="c"><h2>Tabela de equivalências</h2><div class="sc"><table>
+<tr><th>Grandeza</th><th>Equivalências</th></tr>
+<tr><td>Massa</td><td>1 t = 1000 kg · 1 kg = 1000 g · 1 g = 1000 mg · 1 mg = 1000 µg</td></tr>
+<tr><td>Volume</td><td>1 m³ = 1000 L = 1000 dm³ · 1 L = 1 dm³ = 10 dL = 1000 mL = 1000 cm³ · 1 mL = 1 cm³ = 1000 µL</td></tr>
+<tr><td>Densidade</td><td>1 g/mL = 1 g/cm³ = 1 kg/L = 1000 kg/m³ = 1000 g/L</td></tr></table></div>
+<div class="f">Atalho: kg/m³ ÷ 1000 = g/mL</div></div>
+<div class="c"><h2>Conversor</h2>
+<div class="r"><select id="cat"></select></div>
+<div class="r"><input id="v" type="number" step="any" value="1" inputmode="decimal"><select id="u1"></select><span>→</span><select id="u2"></select></div>
+<div class="res" id="out"></div></div>
+<div class="c"><h2>Calculadora d · m · V</h2>
+<div class="r"><input id="cd" type="number" step="any" placeholder="d (g/mL)" inputmode="decimal"><input id="cm" type="number" step="any" placeholder="m (g)" inputmode="decimal"><input id="cv" type="number" step="any" placeholder="V (mL)" inputmode="decimal"></div>
+<p class="s">Preencha dois campos e deixe o terceiro vazio.</p><div class="res" id="cr"></div></div>
+</div>
+<div id="b" hidden></div>
+<div id="c" hidden></div>
+</div>
+<script>
+var $=function(s){return document.querySelector(s)};
+var U={Massa:{t:1e6,kg:1e3,g:1,mg:1e-3,"µg":1e-6},Volume:{"m³":1e6,L:1e3,"dm³":1e3,dL:100,mL:1,"cm³":1,"µL":1e-3},Densidade:{"kg/m³":1e-3,"g/mL":1,"g/cm³":1,"kg/L":1,"g/L":1e-3}};
+function fill(el,arr){el.innerHTML=arr.map(function(x){return"<option>"+x+"</option>"}).join("")}
+fill($("#cat"),Object.keys(U));
+function units(){var k=Object.keys(U[$("#cat").value]);fill($("#u1"),k);fill($("#u2"),k);$("#u2").selectedIndex=Math.min(1,k.length-1);conv()}
+function fmt(n){return n.toLocaleString("pt-BR",{maximumSignificantDigits:8})}
+function conv(){var t=U[$("#cat").value],v=parseFloat($("#v").value);if(isNaN(v)){$("#out").textContent="";return}
+$("#out").textContent=fmt(v)+" "+$("#u1").value+" = "+fmt(v*t[$("#u1").value]/t[$("#u2").value])+" "+$("#u2").value}
+["#cat"].forEach(function(s){$(s).onchange=units});["#v","#u1","#u2"].forEach(function(s){$(s).oninput=conv});
+units();
+function calc(){var d=parseFloat($("#cd").value),m=parseFloat($("#cm").value),v=parseFloat($("#cv").value),o=$("#cr"),e=[d,m,v].filter(isNaN).length;
+if(e!=1){o.textContent="";return}
+if(isNaN(d))o.textContent="d = "+fmt(m/v)+" g/mL";else if(isNaN(m))o.textContent="m = "+fmt(d*v)+" g";else o.textContent="V = "+fmt(m/d)+" mL"}
+["#cd","#cm","#cv"].forEach(function(s){$(s).oninput=calc});
+var Q=[
+{n:"Manipulação de Xarope",q:"Manipular 250 mL de xarope com d = 1,32 g/cm³. Qual a massa total em kg?",a:"0,330 kg",d:["330 kg","0,189 kg","3,30 kg"],s:["m = d × V = 1,32 × 250 = 330 g","330 g ÷ 1000 = 0,330 kg"]},
+{n:"Soluções Injetáveis",q:"Solução injetável com d = 1050 kg/m³. Qual o volume, em µL, de 0,525 g?",a:"500 µL",d:["0,5 µL","50 µL","5000 µL"],s:["1050 kg/m³ ÷ 1000 = 1,05 g/mL","V = m ÷ d = 0,525 ÷ 1,05 = 0,5 mL","0,5 mL × 1000 = 500 µL"]},
+{n:"Controle de Qualidade",q:"1,26 kg de glicerina ocupa 1000 mL. Qual a densidade relativa à água a 4 °C?",a:"1,26",d:["0,79","1,26 g/mL²","12,6"],s:["1,26 kg = 1260 g","d = 1260 g ÷ 1000 mL = 1,26 g/mL","d relativa = 1,26 ÷ 1,00 = 1,26 (adimensional)"]},
+{n:"Emulsões Tópicas",q:"80 g de óleo mineral com d = 0,85 g/mL. Qual o volume em dL?",a:"0,941 dL",d:["94,1 dL","68 dL","9,41 dL"],s:["V = 80 ÷ 0,85 ≈ 94,12 mL","94,12 mL ÷ 100 ≈ 0,941 dL"]},
+{n:"Dosagem de Ampolas",q:"Frasco com 50 mL de fármaco (d = 1,15 g/cm³). Dose máxima de 230 mg. Quantas doses existem?",a:"250 doses",d:["25 doses","217 doses","2,5 doses"],s:["m = 1,15 × 50 = 57,5 g","57,5 g = 57 500 mg","57 500 ÷ 230 = 250 doses"]},
+{n:"Reologia de Pós",q:"Densidade compactada de 0,75 g/mL. Qual o volume, em L, de 150 g do pó compactado?",a:"0,2 L",d:["0,25 L","200 L","0,09 L"],s:["Use a densidade compactada, não a aparente","V = 150 ÷ 0,75 = 200 mL","200 mL = 0,2 L"]},
+{n:"Análise Picnométrica",q:"Picnômetro vazio 25,000 g; com água 50,000 g; com óleo 47,500 g. Densidade do óleo em kg/L?",a:"0,9 kg/L",d:["1,9 kg/L","0,09 kg/L","1,1 kg/L"],s:["Água: 50 − 25 = 25 g, logo V = 25 mL","Óleo: 47,5 − 25 = 22,5 g","d = 22,5 ÷ 25 = 0,9 g/mL = 0,9 kg/L"]},
+{n:"Soluções Concentradas",q:"H₂O₂ 30% (m/m), d = 1,11 g/mL. Qual a massa de H₂O₂ puro em 500 mL?",a:"166,5 g",d:["150 g","555 g","16,65 g"],s:["Massa da solução = 1,11 × 500 = 555 g","H₂O₂ = 555 × 0,30 = 166,5 g"]},
+{n:"Escala Industrial",q:"Lote de 2 m³ de álcool 70% (v/v), d = 0,88 g/cm³. Qual a massa em toneladas?",a:"1,76 t",d:["1760 t","0,88 t","17,6 t"],s:["2 m³ = 2 000 000 cm³","m = 0,88 × 2 000 000 = 1 760 000 g","1 760 000 g ÷ 1 000 000 = 1,76 t"]},
+{n:"Pesagem de Excipientes",q:"Propilenoglicol, d = 1,036 g/cm³. Qual a massa, em mg, de 0,05 dm³?",a:"51 800 mg",d:["51,8 mg","5180 mg","518 000 mg"],s:["0,05 dm³ = 50 cm³","m = 1,036 × 50 = 51,8 g","51,8 g × 1000 = 51 800 mg"]}];
+$("#b").innerHTML=Q.map(function(x,i){return'<div class="c"><div class="tag">Questão '+(i+1)+' · '+x.n+'</div><p>'+x.q+'</p><button class="b g" data-i="'+i+'">Ver resolução</button><div hidden id="s'+i+'"><ol class="st">'+x.s.map(function(t){return"<li>"+t+"</li>"}).join("")+'</ol><div class="res">Resposta: '+x.a+'</div></div></div>'}).join("");
+$("#b").onclick=function(e){var i=e.target.dataset.i;if(i==null)return;var p=$("#s"+i);p.hidden=!p.hidden;e.target.textContent=p.hidden?"Ver resolução":"Ocultar"};
+var qi=0,sc=0,ord=[],done=false;
+function shuf(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function start(){ord=shuf(Q.map(function(_,i){return i}));qi=0;sc=0;show()}
+function show(){var el=$("#c");if(qi>=ord.length){var p=Math.round(sc/ord.length*100);el.innerHTML='<div class="c"><h2>Resultado</h2><div class="res">'+sc+' de '+ord.length+' ('+p+'%)</div><p>'+(p>=80?"Excelente! Você domina o assunto.":p>=50?"Bom caminho. Revise as resoluções dos erros.":"Revise as conversões e tente de novo.")+'</p><button class="b" id="rs">Refazer quiz</button></div>';$("#rs").onclick=start;return}
+var x=Q[ord[qi]],o=shuf([x.a].concat(x.d));done=false;
+el.innerHTML='<div class="c"><div class="bar"><i style="width:'+(qi/ord.length*100)+'%"></i></div><p class="tag">Pergunta '+(qi+1)+' de '+ord.length+' · acertos: '+sc+'</p><p>'+x.q+'</p>'+o.map(function(t){return'<button class="o">'+t+'</button>'}).join("")+'<div id="fb" hidden></div></div>';
+el.querySelectorAll(".o").forEach(function(b){b.onclick=function(){if(done)return;done=true;var ok=b.textContent==x.a;if(ok)sc++;
+el.querySelectorAll(".o").forEach(function(q){if(q.textContent==x.a)q.classList.add("ok")});if(!ok)b.classList.add("no");
+var f=$("#fb");f.hidden=false;f.innerHTML=(ok?"✅ Correto!":"❌ Resposta certa: "+x.a)+'<ol class="st">'+x.s.map(function(t){return"<li>"+t+"</li>"}).join("")+'</ol><button class="b" id="nx">'+(qi+1<ord.length?"Próxima":"Ver resultado")+'</button>';
+$("#nx").onclick=function(){qi++;show()}}})}
+start();
+document.querySelectorAll("nav button").forEach(function(b){b.onclick=function(){document.querySelectorAll("nav button").forEach(function(x){x.classList.toggle("on",x==b)});["z","l","a","b","c"].forEach(function(k){$("#"+k).hidden=k!=b.dataset.t})}});
+function setF(el,a){el.innerHTML=a.map(function(t,i){return'<span style="animation-delay:'+i*.18+'s">'+t+'</span>'}).join(' ')}
+function cnt(el,to){var n=0,id=setInterval(function(){n+=to/20;if(n>=to){n=to;clearInterval(id)}el.textContent=n.toFixed(2).replace('.',',')+' g'},40)}
+$('#pes').onclick=function(){$('#f0').innerHTML='';cnt($('#w1'),1);cnt($('#w2'),1.4);setTimeout(function(){setF($('#f0'),['d','=','m ÷ V','=','1,4 ÷ 1','=','1,4 g/mL (mel)'])},1000)};
+var TR={m:{f:['m','=','d','×','V'],e:'Tapou m → multiplique. Ex.: 1,32 × 250 = 330 g'},d:{f:['d','=','m','÷','V'],e:'Tapou d → divida. Ex.: 250 g ÷ 200 mL = 1,25 g/mL'},V:{f:['V','=','m','÷','d'],e:'Tapou V → divida. Ex.: 80 ÷ 0,85 ≈ 94,1 mL'}};
+document.querySelectorAll('.tri g').forEach(function(g){g.onclick=function(){document.querySelectorAll('.tri g').forEach(function(x){x.classList.remove('on')});g.classList.add('on');var t=TR[g.dataset.k];setF($('#f1'),t.f);$('#e1').textContent=t.e}});
+$('#sol').onclick=function(){var t=$('#tk');t.classList.toggle('go');this.textContent=t.classList.contains('go')?'↺ Voltar':'💧 Soltar na água'};
+var LD={m:{u:['t','kg','g','mg','µg'],s:[1000,1000,1000,1000]},v:{u:['L','dL','mL','µL'],s:[10,100,1000]}},sel={},tm=[];
+function drawL(k){var d=LD[k],h='';d.u.forEach(function(u,i){h+='<button class="o ch" data-k="'+k+'" data-i="'+i+'">'+u+'</button>';if(i<d.s.length)h+='<span class="ar">×'+d.s[i]+'<br>÷'+d.s[i]+'</span>'})
+$('#L'+k).innerHTML=h}
+function mark(k,i,c){var a=$('#L'+k).querySelectorAll('.ch');a[i].classList.add(c)}
+function go(k,a,b){var d=LD[k],o=$('#O'+k),dir=b>a?1:-1,f=1,tx=[],j=a;tm.forEach(clearTimeout);tm=[];
+if(a==b){o.textContent='Mesma unidade: nada a converter';return}
+var n=0;while(j!=b){var nx=j+dir,st=dir>0?d.s[j]:d.s[nx];f*=st;tx.push((dir>0?'×':'÷')+st);(function(nx,t,ff,last){n++;tm.push(setTimeout(function(){mark(k,nx,'ok');var r=dir>0?ff:1/ff;o.innerHTML=t.join(' ')+(last?'<br><span class="res">1 '+d.u[a]+' = '+r.toLocaleString('pt-BR',{maximumFractionDigits:6})+' '+d.u[b]+'</span>':'')},n*500))})(nx,tx.slice(),f,nx==b);j=nx}}
+['m','v'].forEach(function(k){drawL(k)});
+document.addEventListener('click',function(e){var b=e.target.closest('.ch');if(!b)return;var k=b.dataset.k,i=+b.dataset.i,s=sel[k];
+if(!s||s.b!=null){sel[k]={a:i};drawL(k);mark(k,i,'ok');$('#O'+k).textContent='Agora escolha a unidade de destino';tm.forEach(clearTimeout)}else{s.b=i;drawL(k);mark(k,s.a,'ok');go(k,s.a,i)}});
+var MS=[['1. Anote','m = 80 g · d = 0,85 g/mL · pede: dL'],['2. Converta antes','Já está em g e g/mL ✔'],['3. Calcule','V = m ÷ d = 80 ÷ 0,85 = 94,12 mL'],['4. Converta o resultado','mL → dL: ÷ 100 = <b>0,941 dL</b>']],ms=0;
+$('#nxt').onclick=function(){if(ms>=MS.length){ms=0;$('#ms').innerHTML='';this.textContent='Próximo passo ▶';return}$('#ms').insertAdjacentHTML('beforeend','<div class="f st2"><b>'+MS[ms][0]+'</b><br>'+MS[ms][1]+'</div>');ms++;this.textContent=ms>=MS.length?'↺ Recomeçar':'Próximo passo ▶'};
+var ly=0;function lay(){if(ly>=10)return;ly++;var h='';for(var i=0;i<100;i++)h+='<i style="animation-delay:'+i*4+'ms;filter:brightness('+(1.3-ly*.06)+')"></i>';$('#gr').innerHTML=h;$('#gc').textContent='Camada '+ly+' de 10 → '+ly*100+' cubinhos';if(ly==10)$('#gm').hidden=false}
+$('#lay').onclick=lay;$('#lr').onclick=function(){ly=0;$('#gr').innerHTML='';$('#gc').textContent='0 cubinhos';$('#gm').hidden=true};
+var TZ=[['1 mL de água pesa quantos g?',1,'A água é a referência: d = 1 g/mL.'],['1 cm³ é igual a quantos mL?',1,'São o mesmo volume, só muda o nome.'],['Xarope com d = 1,32 g/mL. Quanto pesam 250 mL? (em g)',330,'m = d × V = 1,32 × 250.'],['330 g são quantos kg?',0.33,'De g para kg, divida por 1000.']];
+$('#tz').innerHTML=TZ.map(function(t,i){return'<div class="c" style="padding:10px"><div>'+(i+1)+'. '+t[0]+'</div><div class="r"><input type="text" inputmode="decimal" id="ti'+i+'" style="width:110px"><button class="b g" data-z="'+i+'">Conferir</button><span id="tr'+i+'"></span></div></div>'}).join('');
+$('#tz').onclick=function(e){var i=e.target.dataset.z;if(i==null)return;var v=parseFloat($('#ti'+i).value.replace(',','.')),r=$('#tr'+i);r.textContent=Math.abs(v-TZ[i][1])<1e-9?'✅ Isso mesmo!':'💡 '+TZ[i][2]};
+</script></body></html>
